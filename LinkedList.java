@@ -74,10 +74,7 @@ public static void main(String[] args) {
         }
     }
 public void insertMiddle(int data, int pos) {
-        if (pos < 1) {
-            System.out.println("Position should be greater than or equal to 1.");
-            return;
-        }
+        
         
         Node newNode = new Node(data);
 
@@ -108,11 +105,14 @@ public void insertMiddle(int data, int pos) {
         current.next = newNode;
     }
 public void displayList() {
-        Node current = head;
-        while (current != null) {
-        System.out.print(current.data + " -> ");
-        current = current.next;
-        }
+Node current = head;
+while (current != null) {
+System.out.print(current.data);
+current = current.next;
+}
+
+
+
 System.out.println("null");
-    }
+}
 }
